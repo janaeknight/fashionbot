@@ -10,7 +10,6 @@ var cold = 0;       var coldWear = "";
 var warm = 0;       var warmWear = "";
 var hot = 0;        var hotWear = "";
 var rainy = 0;      var rainyWear = "";
-var dry = 0;        var dryWear = "";
 var humid = 0;      var humidWear = "";
 
 if (temp <=11) {
@@ -23,9 +22,10 @@ if (temp >=12 && temp <= 46) {
             rainy = rainy + 1;
         }
     var coldHumid = prompt("Is it humid? (Yes/No)");
-        if (coldHumid == yes) {
+        if (coldHumid == "yes") {
             humid = humid + 1;
         }
+    confirm("For COLD weather......................");
 }
 if (temp >=47 && temp <=69) {
     cool = cool + 1;
@@ -58,6 +58,6 @@ if (temp >=81 && temp <=103) {
         humid = humid + 1;
     }
 }
-if (temp>=104) {
+if (temp >= 104) {
     alert("WARNING: It's way too hot to be outside comfortably for longer than 20 seconds. If you decide to go outside anyways, I recommended not wearing any clothes at all. Maybe take off your skin too.");
-}
+} 
