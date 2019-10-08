@@ -1,0 +1,8 @@
+body {
+    width: 95%; background-color: black;
+    font-size: 22px; color: snow;
+    font-family: "Lucida Sans Typewriter", "Lucida Console",monaco, "Bitstream Vera Sans Mono", monospace;
+    padding-top: 25px; padding-left: 10px;
+}
+
+.txt-green { color: #28B463; }
