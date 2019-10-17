@@ -31,22 +31,34 @@ if (temp >=12 && temp <= 46) {
 if (temp >=47 && temp <=69) {
     cool = cool + 1;
     var coolRain = prompt("Will it rain? (Yes/No)");
-    if (coolRain == "yes") {
+    if (coolRain == "Yes" || coolRain == "YES" || coolRain == "yes" || coolRain == "y") {
         rainy = rainy + 1;
     }
-    var coolHumid = prompt("Is it humid? (Yes/No)");
-    if (coolHumid == "yes") {
-        humid = humid + 1;
+    // COOL End Conditions
+    if (cool>=1 && coolRain>=1 ) {
+        confirm("For COOL, RAINY weather ranging between 47° and 69°, you should wear...")
+    } else {
+        confirm("For COOL weather ranging between 47° and 69°, you should wear...")
     }
 }
 if (temp >=70 && temp <=81) {
     var warmRain = prompt("Will it rain? (Yes/No)");
-    if (warmRain == "yes") {
+    if (warmRain == "Yes" || warmRain == "YES" || warmRain == "yes" || warmRain == "y") {
         rainy = rainy + 1;
     }
     var warmHumid = prompt("Is it humid? (Yes/No)");
-    if (warmHumid == "yes") {
+    if (warmHumid == "Yes" || warmHumid == "YES" || warmHumid == "yes" || warmHumid == "y") {
         humid = humid + 1;
+    }
+    // WARM End Conditions
+    if (warm>=1 && warmRain>=1 && warmHumid>=1) {
+        confirm("For WARM, RAINY, HUMID weather, you should wear...");
+    } if (warm>=1 && warmRain>=1 && warmHumid<1) {
+        confirm("For WARM, RAINY weather, you should wear...");
+    } if (warm>=1 && warmRain<1 && warmHumid>=1) {
+        confirm("For WARM, HUMID weather, you should wear...");
+    } else {
+        confirm("For WARM weather, you should wear...")
     }
 }
 if (temp >=81 && temp <=103) {
